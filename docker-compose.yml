@@ -21,9 +21,9 @@ services:
       - .:/src
     ports:
       - "8000:8000"
-    links:
-      - db:postgres
-      - redis:redis
+    depends_on:
+      - db
+      - redis
 
 volumes:
   postgres_data:
