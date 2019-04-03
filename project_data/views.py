@@ -20,3 +20,7 @@ def project_list_view(request):
         'projects': projects,
     }
     return render(request, 'project_list.html', context)
+
+
+def project_detail_view(request, pk=None):
+    return render(request, 'project_detail.html')
