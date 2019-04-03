@@ -3,7 +3,7 @@ from .models import Project
 
 # Create your views here.
 def project_list_view(request):
-    projects=get_list_or_404(Project, id__lte=10)
+    projects=get_list_or_404(Project,id__lte=15)
     context= {
         'projects': projects,
     }
